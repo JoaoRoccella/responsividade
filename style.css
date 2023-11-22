@@ -76,6 +76,31 @@ A partir da tela menor -> desktop: min-width (Mobile First)
 
 }
 
+#bt-menu {
+    display: none;
+}
+
+@media only screen and (width < 480px) {
+
+    #bt-menu {
+        display: initial;
+    }
+    
+    .menu-sanduba {
+        display: none;
+    }
+
+    header {
+        height: initial;
+    }
+
+    .visivel {
+        display: block;
+        width: 100%;
+    }
+
+}
+
 @media print {
 
     @page {
