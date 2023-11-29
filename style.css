@@ -1,0 +1,108 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 20px auto;
+    width: 80vw;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 249, 159, 1) 100%);
+}
+
+.titulo-contrato {
+    font-size: 28pt;
+    margin: 20px 0;
+    font-family: Helvetica, sans-serif;
+}
+
+h2.secao {
+    font-size: 22pt;
+    font-family: Helvetica, sans-serif;
+}
+
+div.secao,
+div.secao p {
+    margin: 20px 0;
+}
+
+div.secao p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+nav {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    line-height: 1.5;
+    color: blue;
+}
+
+nav a:visited {
+    color: blue;
+}
+
+@media screen and (max-width: 600px) {
+
+    div.secao p {
+        font-size: 16pt;
+    }
+
+    nav a {
+        font-size: 16pt;
+    }
+
+    .titulo-contrato {
+        font-size: 22pt;
+    }
+
+    .titulo-contrato,
+    h2.secao {
+        text-align: center;
+    }
+
+    div.secao span {
+        text-align: center;
+        display: block;
+    }
+
+}
+
+@media print {
+
+    @page {
+        size: 21.0cm 29.7cm;
+        margin: 2cm;
+    }
+
+    body {
+        margin: 0;
+        width: 100%;
+        background: none;
+    }
+
+    nav,
+    div.secao span,
+    button#imprimirPagina {
+        display: none;
+    }
+
+    .titulo-contrato {
+        font-size: 18pt;
+        text-align: center;
+        background-color: #ccc;
+        padding: 10px 0;
+    }
+
+    h2.secao {
+        font-size: 14pt;
+        font-weight: bold;
+    }
+
+    div.secao p {
+        font-size: 12pt;
+    }
+
+}
